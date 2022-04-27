@@ -1,9 +1,9 @@
-
 package projetorecupera;
 
 import Classe_Pessoa.Pessoa;
 
-public class PessoaFisica extends Pessoa{
+public class PessoaFisica extends Pessoa {
+    //Declarando atributos da classe PessoaFisica
     private int rg;
     private int cpf;
     private String tipo;
@@ -12,6 +12,7 @@ public class PessoaFisica extends Pessoa{
     public PessoaFisica() {
     }
 
+    //Criação Gets da Classe PessoaFisica
     public String getTipo() {
         return tipo;
     }
@@ -23,7 +24,8 @@ public class PessoaFisica extends Pessoa{
     public int getCpf() {
         return cpf;
     }
-    
+
+    //Criação Sets da Classe PessoaFisica
     public void setRg(int rg) {
         this.rg = rg;
     }

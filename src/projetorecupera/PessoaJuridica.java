@@ -1,18 +1,19 @@
-
 package projetorecupera;
 
 //PessoaJuridica classe filha da Pessoa
-
 import Classe_Pessoa.Pessoa;
 
-public class PessoaJuridica extends Pessoa{
+public class PessoaJuridica extends Pessoa {
+
+    //Declarando atributos Pessoa juridica
     private int cnpj;
     private String tipo;
 
-    public PessoaJuridica(int cnpj) {
-        this.cnpj = cnpj;
+    //Construtor vazio
+    public PessoaJuridica() {
     }
 
+    //Criação Gets da classe PessoaJuridica
     public int getCnpj() {
         return cnpj;
     }
@@ -21,6 +22,7 @@ public class PessoaJuridica extends Pessoa{
         return tipo;
     }
 
+    //Criação Sets da classe PessoaJuridica
     public void setCnpj(int cnpj) {
         this.cnpj = cnpj;
     }
@@ -28,8 +30,5 @@ public class PessoaJuridica extends Pessoa{
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    
-    
-    
-    
+
 }

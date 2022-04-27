@@ -1,7 +1,7 @@
-
 package projetorecupera;
 
 public class Contato {
+    //Declarando Atributos da classe Contato
     private String email;
     private int telefone;
     private int ddd;
@@ -10,7 +10,7 @@ public class Contato {
     public Contato() {
     }
 
-    //Criação gets
+    //Criação gets da classe Contato
     public String getEmail() {
         return email;
     }
@@ -23,6 +23,7 @@ public class Contato {
         return ddd;
     }
 
+    //Criação Sets da classe Contato
     public void setEmail(String email) {
         this.email = email;
     }
@@ -34,7 +35,5 @@ public class Contato {
     public void setDdd(int ddd) {
         this.ddd = ddd;
     }
-    
-    
-    
+
 }

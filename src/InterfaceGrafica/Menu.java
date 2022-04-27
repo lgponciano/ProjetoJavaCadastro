@@ -1,26 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package InterfaceGrafica;
 
-/**
- *
- * @author Lucas
- */
 public class Menu extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Menu
-     */
     public Menu() {
         initComponents();
     }
-    
-    CadastroPessoaFisica telaPessoaF = new CadastroPessoaFisica();
-    
 
+    CadastroPessoaFisica telaPessoaF = new CadastroPessoaFisica();
+    CadastroPessoaJuridica telaPessoaJ = new CadastroPessoaJuridica();
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -47,6 +34,11 @@ public class Menu extends javax.swing.JFrame {
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/company.png"))); // NOI18N
         jButton1.setText("Pessoa Juridica");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(255, 255, 51));
         jButton2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -130,9 +122,14 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        //Quando pessoa Apertar este botão abrirá tela cadastro pessoa Fisica
+        //Ao apertar Botão Cadastro Fisico Abrirá tela para cadastro pessoa Fisica
         telaPessoaF.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        //Ao apertar Botão Cadastro juridica Abrirá tela para cadastro pessoa Juridica
+        telaPessoaJ.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,6 +161,7 @@ public class Menu extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                //Iniciando Classe Menu
                 new Menu().setVisible(true);
             }
         });
