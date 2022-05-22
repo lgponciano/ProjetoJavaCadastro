@@ -1,4 +1,4 @@
-# CadastroPessoaFisic
+# CadastroPessoaFisica
 Entrega do projeto CadastroPessoaFisica para AC1 Linguagem Programação
 ## Pré Requisitos:
  NetBeans 8.2 e Git
